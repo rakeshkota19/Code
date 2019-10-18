@@ -191,5 +191,5 @@ MISC
 	SEGMENT TREES 
 		...O(logn) for finding
 
-	KMP Matching -> O(n) worst case
+	KMP Matching -> O(n) worst c`se
 		
