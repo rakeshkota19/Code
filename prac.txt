@@ -1,0 +1,195 @@
+
+complexity 
+O(exponential) binary
+O(n!) permura
+O(n2)
+O(nlogn)
+O(n)
+O(1)
+
+O(logn) binary search
+
+Masters Method
+
+  BInary Search : 
+	
+	idea -> divide by 2
+	
+	used when sorting is there, or else no use ......because we cant get any condition to go left or right...
+
+	basic problem : finding ocurences of element in array in O(logn)
+	medium : painters probelm, book allocation...
+	
+	always make use of sorting, conditions will obviously pop up, not an issue.
+
+	T(n) = T(n/2) + 1
+	O(logn)
+
+	Good Problems : 
+		Divide an INteger
+
+
+  BInary Math, Hashing:
+	
+	they are many problems involving binary numbers which we cant see with our own eyes, until you have actually solved a problem.
+	
+	one such question was asked in amazon intern round, find the next magic cumber( 5, 25, 5+25, 125, 125 + 5 )...... binary problem only.
+
+	Xor comes very handy in solving problems like finding missing element, repeated element, and so on 
+
+	bitset can be also used , it saves space by /32..
+
+	subset sum problem can be solved using bits, but it is exponential, so we use dp ( O(m*n))
+	
+	basic problem : find missing element, repeated element, find elemtn which is not repeated 3 times.
+	find the number multipied by it into 10 without *
+
+	many problems involving subarrays and xor value.
+
+
+	hashing:
+
+	unordered_map -> O(1) -> hashing is used ( HashMap(java))
+	ordered_map -> O(logn) same as reb black -> treeMap(java)
+
+	use efficiently, if order is not important then go for unordered_map
+
+	hashing may take space, but helps in speed,....
+
+	they are many problems dealing with hashing...
+	Some of them are finding subarrays with sum 0
+
+ 
+ Arrays : 
+	
+	Sorting, Sliding Window, PRefix, Suffix, Hashing, Two Pointer -> main basics for solving any basci to mediocre array problem.
+	Lets discuss each of them: 
+
+	Sorting: 
+	many sorts, of them fastest is count sort -> O(n) takes O(n) space
+	Merge Sort t(n) = t(n/2) + n
+	Quick Sort avg case t(n) = t(n/2) + n ,  always choose the median randomly, helps in getting average case.
+	inSERTION, used when elements are coming in order, O(nlogn)
+	HeapSort, O(nlogn)
+	
+	stable Sort : an algo which order between same elements never changes is called stable sort.
+	merge sort -> stable , as order is maintained
+	heap sort -> not stable
+	insertion -> stable
+	quick -> not stable...
+
+	bucket sort ... to be contiuned later
+	
+	Always think of sorting, when Binary search or greedy approach should be tried.
+
+	
+	Sliding Window:
+	very basic idea is slide the computatuon by removing elements from left side and adding from right side.
+	
+	they are many problems based on this idea.
+	problem : print max of every subarray of size 3.
+
+	Prefix, Suffix : 
+	
+	maintaing prefix sums and suffix sums help a lot to tackle problems.
+	
+	Two Pointer : 
+	
+	It can be used only when the array is sorted, left side -> <- right side
+	based on some conditions.
+
+	problems : finding no of pairs such that a+b< 25 bla bla
+
+
+STACK:
+	
+	very useful data structure.
+	When in college, always why do we use Stack, after working as a developer, understood it is very important. every developer willuse it somewhere ( git stash)
+
+	pop push LIFO
+	used for balancing parenthesis, postfix to infix conversions
+	
+	Recurison : 
+		very easy if you try to visualize.
+		
+		while using it, always take care of the base condition, or else go into max depth.
+		
+		backtracking is same as recursion, but with little intuition of eleimination some cases, when we already know that they are unfruitful
+
+		careful, take care of complexity..
+	
+		dp is same as recursion, but with some memorization....(topdown )
+		
+	problems :
+		queue using 2 stacks
+		next greater elemt
+		reverse a stack
+QUEUE :	
+	LIFO
+	used very extensivelu in real world, rabit mq, chrome webpages back and forward...
+	circular queue -> uses space efficiently.
+
+
+LinkedList:
+	Dynamic, insrtion -> O(n), searching -> O(n), deletion O(n)
+	We can apply binary search on LL, but its of no use, because it is O(n) for finding middle element.
+	Sorting takes O(n2)
+	
+	Double XOr list -> same as doubly linked list but with only one space used for each node.
+	
+
+Tree:
+	Dont assume tree as Binary tree. A tree generally means a n ary tree.
+	
+	n - ary tree implementation : 
+		general implemenatation like binary tree will waste a lot of space.
+		
+		so each node has a next pointer and a size pointer.
+			A->B\C->D...
+	
+	binary tree...
+		generally they are 6 permutations of 3 nodes, but we have only 3 ways of iterating the bt.
+		inorder -> left root right
+		preorder -> root
+		postorder	
+		
+		as we only care about root, these 3 postions are important.
+
+		level order -> using queue.
+	BST
+		left < root < right
+		
+		finding elememtn O(logn)
+		worst case O(n) , skewed tree
+
+		sorted order is given by inorder...
+		
+		as it fails worst case, AVL, REDBLACK trees have come.
+	
+	AVL TREES : 
+		self rotating trees
+		O(logn) even in worst case
+		
+		they are 4 cases .	
+	
+		...
+Graph
+	BFS -> O(n)
+	DFs -> O(n)
+
+	Union find -> Disjoint set union -< used for finding whethere two elements belong to same set or not....
+
+	kruskal
+	prims
+	dijkstra
+	warshall
+
+
+MISC
+
+	BIT TREES
+	SEGMENT TREES 
+		...O(logn) for finding
+
+	KMP Matching -> O(n) worst case
+		
