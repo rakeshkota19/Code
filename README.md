@@ -1,2 +1,2 @@
-# Codfe
-Coding Problems in InterviewBit
+# Code
+Coding Problems in InterviewBit/LeetCode

@@ -38,7 +38,7 @@ vector<int> twoSum(vector<int>& arr, int target) {
 	return vector<int> {};
 }
 
-// bs, 2 pointer
+// sorting, 2 pointer
 
 vector<int> twoSum(vector<int>& arr, int target) {
 
