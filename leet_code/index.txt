@@ -1,3 +1,6 @@
-leetCode started on 3th Oct
+Leet Code started on 7th September
+
+Milestone 1:
+    7 th December - 300 Problems
 
 
